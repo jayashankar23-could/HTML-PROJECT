@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Plaza Food Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            display:inline;
+        }
+        nav{
+            background-color:black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            color: yellow;
+        }
+        a{
+            padding:20px;
+            color:aliceblue;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: green;
+        }
+        a:active{
+            color: red;
+        }
+        a:visited{
+            color: antiquewhite;
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        div{
+            padding-top: 20px;
+        }
+        footer {
+            background-color:black;
+            color: yellow;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+        #menu{
+            display: inline;
+        }
+        .custom-button{
+            width: 200px;
+            height: 100px;
+            color: black;
+        }
+        #services{
+            background-repeat: no-repeat;
+            height: 50vh;
+            background-position: center;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #9c27b0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ab47bc;
+        }
+    </style>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+            document.getElementById(pageId).style.display = 'block';
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage('home');
+        });
+    </script>
+        
+</head>
+<body>
+    <nav>
+    <h1>Welcome to Food Plaza</h1>
+    <img src="https://th.bing.com/th?id=OIP.xS8ggv5_qTzftuOz4v9fLwHaKf&w=210&h=297&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="logo" height="100px" width="200px">
+        <ul type="none">
+            <button onclick="showPage('Home')">Home</button>
+            <button onclick="showPage('About')">About Us</button>
+            <button onclick="showPage('Menu')">Menu</button>
+            <button onclick="showPage('Services')">Services</button>
+            <button onclick="showPage('feedback')">Feedback</button>
+            <button onclick="showPage('Payment')">Payment</button>
+        </ul>
+    </nav>
+    <div>
+        <section id="Home" class="page">
+            <h1>Home</h1>
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png" alt="" height="600px" width="100%">
+            <h2><p>This is a food plaza food restaruentweb site.</p></h2>
+        </section>
+        <section id="About" class="page" style="display:none;">
+            <h1>About us</h1>
+            <img src="https://th.bing.com/th?id=OIP.QD-OWx9DBu_Reu4ECijZBQAAAA&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="250px" width="250px">
+            <h2>
+            <p>This is a tasty food restaruent.We established in the early 2000's and we are the trusted one.</p>
+            <p>We use only natural items and we did not use any food colour or any harmful ingredents wich are harmfulto health.</p>
+            <p>Our restaruentis one of the best restaruent.We use only fresh items and fresh vegetables and we change oil every day.</p>
+            <p>Best Food Store in Nadia Food Plaza stands as a beacon for food enthusiasts, offering a tantalizing array of culinary delights to satisfy every craving. Renowned for its delectable snacks, aromatic biryani, and flavorful rice dishes, Food Plaza tantalizes taste buds with a symphony of flavors.</p>
+            <p>From succulent fish and paneer dishes to mouthwatering chowmein and momos, each bite is a journey through savory perfection. Indulge in the satisfying crunch of rolls and the rich, velvety texture of Moghlai cuisine, crafted with expertise and care.</p>
+            <p>For meat lovers, Food Plaza boasts an impressive selection of mhttps://cdn.addmeglobal.com/66151271067d0e38c2e60615.pngutton and chicken dishes, from traditional preparations to modern twists. The aroma of tandoori delights fills the air, while the sizzle of tadka entices diners with its aromatic allure.</p>
+            <p>With a commitment to quality ingredients and authentic flavors, Food Plaza promises a culinary experience that transcends the ordinary, leaving patrons craving more with each visit. Whether seeking a quick snack or a hearty meal, Food Plaza beckons with open arms, inviting all to indulge in its gastronomic wonders.</p>
+            </h2>
+        </section>
+        <section id="Services" class="page" style="display:none;">
+            <h1>Services</h1>
+            <h2>
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" alt="" height="100px" width="100px">
+            <p>Our services is one of the best services.Our restaruentis one of the cleanest restaruent.</p>
+            <img src="https://th.bing.com/th?id=OIP.hRIlHGzrB_HgGeoa9G8ucwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Table Service: Servers take orders and serve food directly to the table.</p>
+            <img src="https://th.bing.com/th?id=OIP.z9J-T0Qi7Ujx88xLk5q9igHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Self-Service: Customers serve themselves from a buffet or salad bar.</p>
+            <img src="https://th.bing.com/th?id=OIP.CE3273-2qT7bfoPKNehVKgHaH5&w=242&h=258&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Counter Service: Customers order and pick up their food at a counter.</p>
+            <img src="https://th.bing.com/th?id=OIP.WHBwZt1ZsQpZE1Kv2G2VEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Drive-Thru Service: Customers order and receive their food without leaving their car.</p>
+            <img src="https://th.bing.com/th?id=OIP.Ouq27cEUmfibYFOTpZGyLQHaH0&w=243&h=256&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Delivery Service: Restaurants deliver food to customers' homes or offices.</p>
+            <img src="https://th.bing.com/th?id=OIP.F6obsYJkZwrtaUuf4S29wAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Catering Service: Providing food and service for events like parties, meetings, or weddings.</p>
+            <img src="https://th.bing.com/th?id=OIP.0iHIeRenWERXa3m3zFwsawHaGB&w=277&h=225&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Online Ordering: Customers can order food through the restaurant's website or app.</p>
+            <img src="https://th.bing.com/th?id=OIP.R0zINopgvh_TlMBoELLQRQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt="" height="100px" width="100px">
+            <p>Takeout Service: Customers order food to go and pick it up themselves.</p>
+            </h2> 
+        </section>
+        <section id="Menu" class="page" style="display:none;">
+            <h1>Menu</h1>
+            <img src="https://cdn.addmeglobal.com/66153e49067d0e38c2e60628.jpg" alt="Fried Rice" height="200px" width="200px">
+            <p>Fried Rice</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/6615403c067d0e38c2e60629.jpg" alt="Mutton Biriyani" height="200px" width="200px">
+            <p>Mutton Biriyani</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153d5c067d0e38c2e6061c.jpg" alt="Chicken Biriyani" height="200px" width="200px">
+            <p>Chicken Biriyani</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153e26067d0e38c2e60626.jpg" alt="Mutton" height="200px" width="200px">
+            <p>Mutton</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153d96067d0e38c2e6061f.jpg" alt="Chicken" height="200px" width="200px">
+            <p>Chicken</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153db7067d0e38c2e60621.jpg" alt=Paneer" height="200px" width="200px">
+            <p>Paneer</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153dfe067d0e38c2e60624.jpg" alt="Momos" height="200px" width="200px">
+            <p>Momos</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153ddf067d0e38c2e60623.jpg" alt="Noodles" height="200px" width="200px">
+            <p>Noodles</p>
+            <button type="submit">Book Now</button><br>
+            <img src="https://cdn.addmeglobal.com/66153d85067d0e38c2e6061e.jpg" alt="Rolls" height="200px" width="200px">
+            <p>Rolls</p>
+            <button type="submit">Book Now</button><br>
+        </section>
+        <section id="Payment" class="page" style="display:none;">
+            <h1>Delivery and Payment</h1>
+            <p>Enjoy hassle-free payment with the plenitude of payment optionsavailable for you. Get live tracking and locate your food on alive map. It's quite a sight to see your food arrive to your door.Plus, you get a 5% discount on every order every time you payonline.</p>
+            <button class="custom-button">Order Now</button>
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" alt="" height="100px" width="100px">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" alt="" height="100px" width="100px">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" alt="" height="100px" width="100px">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" alt="" height="100px" width="100px">
+        </section>
+        <section id="feedback" class="page" style="display:none;">
+            <h2>Customer Feedback</h2>
+            <p>We Respect your feedback,Whetherit is good or bad.It is always helpful to improve your self.! </p><br><br>
+            <form>
+                <label>Enter you name here:</label><br>
+                <input type="text" placeholder="Your Name" required><br><br>
+                <label>Share your experience with us.</label><br>
+                <textarea placeholder="Your Feedback" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </div>
+    <footer>
+        <ul type="none"></ul>
+        <li><p>About:We established in the early 2000's and we are the trusted one.</p></li>
+        <li></li><p>Location:orderfood@FOODPLAZA@gmail.com</p></li>
+        <li></li><p>123 Ayur Vigyan Nagar, New Delhi, India.</p></li>
+        <li></li><p>Phone num:1234567891</p><p>9876543219</p></li>
+    </footer>
+
+</body>
+</html>
